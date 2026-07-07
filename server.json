@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.rootstuff/sentinel",
+  "description": "Uptime, SSL, DNS and domain monitoring you can talk to: check, create and manage monitors for all your client sites from Claude or any MCP client.",
+  "status": "active",
+  "version": "1.0.0",
+  "websiteUrl": "https://sentinel.rootstuff.io/mcp",
+  "repository": {
+    "url": "https://github.com/rootstuff/sentinel-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sentinel.rootstuff.io/mcp/sentinel-oauth"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://sentinel.rootstuff.io/mcp/sentinel",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token created at https://sentinel.rootstuff.io/user/api-tokens",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
