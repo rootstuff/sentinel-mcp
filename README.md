@@ -8,6 +8,10 @@ Uptime, SSL, DNS and domain monitoring you can talk to: check, create and manage
 
 Sentinel is uptime, SSL, DNS and domain-expiry monitoring built for agencies and freelancers managing client websites. This MCP server puts the whole product in your AI assistant: ask "which client SSL certificates expire this month?", "what was uptime across all sites in June?", or "add monitoring for newclient.com" in plain language. Tools cover creating, updating, pausing and deleting monitors, on-demand URL checks from every region, uptime summaries, incident management, DNS history, performance history, expiring-certificate reports, status pages, and a needs-attention digest. Built by a solo founder who uses it daily instead of the dashboard.
 
+<p align="center">
+  <img src="assets/screenshot.png" alt="Sentinel dashboard: monitor stats and global check network" width="800">
+</p>
+
 This is a **hosted (remote) MCP server**; there is nothing to install or run. This repository is its public home: connection instructions, the registry manifest, and the [issue tracker](../../issues) for feedback from agent users.
 
 - **Endpoint (API token / bearer):** `https://sentinel.rootstuff.io/mcp/sentinel`
